@@ -1,0 +1,196 @@
+/*
+	Author	: Mell Rosandich
+	Date	: 6/29/2015
+	email	: mell@ourace.com
+	
+	
+	Copyright 2015 Mell Rosandich
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+		http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+
+*/
+
+.circle_hour {
+        width: 40px;
+        height: 40px;
+        background: #ccc;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 40px;
+		position: absolute;
+		color: #FFF;
+}
+.circle_min {
+        width: 40px;
+        height: 40px;
+        background: #ccc;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 40px;
+		position: absolute;
+		color: #FFF;
+}
+
+.circle_min:hover{
+	background: #66A;
+}
+.circle_hour:hover {
+background: #66A;
+}
+
+.circle_min_selected{
+	background: #66A;
+}
+.circle_hour_selected{
+	background: #66A;
+}
+
+#timepicker_container {
+	width:300px;
+	height:300px;
+	float:left;
+}
+	
+.ui-datepicker td a
+{    
+  height:25px;  
+  width:25px;  
+}
+
+.ui-datepicker
+{ 
+    width:300px;
+}
+
+#hour_container {
+	width:300px;
+	height:300px;
+	}
+#min_container {
+	width:300px;
+	height:300px;
+	display: none;
+	}
+.time_part{
+	width:80px;
+	height:20px;
+	border: 1px solid #777;
+	padding: 4px;
+	position: absolute;
+	top:133px;
+	left:105px;
+	text-align:center;
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 12px;
+}
+.ampm_cont{
+	top:173px;
+	left:105px;
+	width:84px;
+	height:20px;
+	border: 1px solid #777;
+	padding: 2px;
+	position: absolute;
+	overflow: hidden;
+}
+.am_slide{
+	width:36px;
+	height:14px;
+	padding: 2px;
+	border: 1px solid #777;
+	float:left;
+	text-align:center;
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 12px;
+}
+.pm_slide{
+	width:36px;
+	height:14px;
+	padding: 2px;
+	border: 1px solid #777;
+	float:left;
+	text-align:center;
+	display:none;
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 12px;
+}
+.am_slide_l{
+	width:36px;
+	height:14px;
+	padding: 2px;
+	float:left;
+	text-align:center;
+	display:none;
+}
+#datepick_container{
+	float:left;
+	width:300px;
+	height:300px;
+}
+#date_time_container{
+	width:660px;
+	height:420px;
+	display: block;
+}
+.done_container{
+	width:600px;
+	height:30px;
+	border-top:1px solid #666;
+	clear:both;
+	text-align: center;
+	padding-top: 10px;
+}
+.time_title{
+	width:80px;
+	height:20px;
+	padding: 4px;
+	position: absolute;
+	top:80px;
+	left:105px;
+	text-align:center;
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 12px;
+}
+#dt_selected{
+	width:296px;
+	height:20px;
+	border: 1px solid #777;
+	margin-top: 10px;
+	padding: 4px;
+	text-align:center;
+	float:left;
+}
+
+#use_button_cont{
+	width:470px;
+	height:20px;
+}
+
+#use_button{
+margin-top:10px;
+margin-left:10px;
+float:left;
+}
+
+
+
+
+
+
+

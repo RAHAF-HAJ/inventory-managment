@@ -1,0 +1,74 @@
+
+ @media screen and (max-width: 767px) {
+	.main-sidebar{
+		display: none;
+	}
+	.has-mini-sidebar .main-sidebar{
+		display: block;
+	}
+	.content-wrapper, .main-footer{
+	margin-right: 0;
+	}
+	.content-wrapper{
+		padding-top: 50px;
+	}
+	 .main-header .logo {
+		width: 100%;
+		float: none;
+	 }
+	 .main-header .logo .logo-mini {
+		//display: block;
+	 }
+	  .main-header .logo .logo-lg {
+		//display: none;
+	 }
+ 
+ .main-header .navbar-static-top {
+	margin-right: 0;
+	padding-left: 10px;
+}
+	 
+ .has-mini-sidebar .main-header .navbar-static-top {
+	margin-right: 0;
+}
+ .has-mini-sidebar .main-header .logo {
+	width: 100%;
+}
+ .has-mini-sidebar .main-header .logo .logo-lg {
+	display: block;
+}
+ .has-mini-sidebar .main-header .logo .logo-mini{
+	display: none;
+}
+	 
+	 
+	 .main-header .navbar-notifs-top .dropdown{
+		display: inline-block;
+		float: left;
+		position: static;
+		
+	 }
+	.navbar-notifs-top .dropdown.open .dropdown-menu{
+		position: absolute;
+		background-color: #fff;
+		margin-top: 1px;
+		left: 1%;
+		right: auto;
+	}
+	.navbar-notifs-top .dropdown.open .dropdown-user{
+		margin-top: 2px;
+	}
+	 .data-table tr td.table-actions .btn{
+		 display: block;
+	 }
+
+ }
+ @media screen and (max-width: 768px){
+
+	 .content-header ul.header-btns {
+		 float: none;
+		 margin-top: 10px;
+		 text-align: center;
+	 }
+
+ }

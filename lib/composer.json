@@ -1,0 +1,7 @@
+{
+    "require": {
+        "spipu/html2pdf": "^4.6",
+      "ext-json": "*",
+      "ext-apache": "*"
+    }
+}

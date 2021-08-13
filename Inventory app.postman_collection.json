@@ -1,0 +1,179 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Inventory app",
+		"_postman_id": "2fcea397-2f7e-4001-569f-e0e18c8b3b30",
+		"description": "Restapi for Inventory managemnet system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Suppliers",
+			"description": "In this section we apply index and add actions for the supplier.\n<p>\nPlease note that The actions can't be done unless you specify the Bearer token with the generated jwt when logging in.\n</p>",
+			"item": [
+				{
+					"name": "getSuppliers",
+					"request": {
+						"url": "http://localhost/CM_APP/public/api/v1/supplier/index",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTA5MTk5NTEsImlhdCI6MTU5MDgzMzU1MSwibmJmIjoic3RydG90aW1lKFwibm93XCIpIiwiaXNzIjoiaHR0cDpcL1wvbG9jYWxob3N0IiwiYXVkIjoiaHR0cDpcL1wvbG9jYWxob3N0Iiwia2V5IjoiU2pDUHhXSVlzemJkdEpjZE1FNVlMcDhmNkNJM1JteFZXdmphWHU5YTBnS2F5N3N5Q2w0WEtoVVk2aDBiSDBmIiwiZGF0YSI6IjEifQ.KLeQ8W9NVOAzWGPAL_mZnWPQnCW3QM7CT-EufMgno1g",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addSupplier",
+					"request": {
+						"url": "http://localhost/CM_APP/public/api/v1/supplier/add",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTA5MTk5NTEsImlhdCI6MTU5MDgzMzU1MSwibmJmIjoic3RydG90aW1lKFwibm93XCIpIiwiaXNzIjoiaHR0cDpcL1wvbG9jYWxob3N0IiwiYXVkIjoiaHR0cDpcL1wvbG9jYWxob3N0Iiwia2V5IjoiU2pDUHhXSVlzemJkdEpjZE1FNVlMcDhmNkNJM1JteFZXdmphWHU5YTBnS2F5N3N5Q2w0WEtoVVk2aDBiSDBmIiwiZGF0YSI6IjEifQ.KLeQ8W9NVOAzWGPAL_mZnWPQnCW3QM7CT-EufMgno1g",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "rahaf haj",
+									"type": "text",
+									"description": "(string) supplier name"
+								},
+								{
+									"key": "tel",
+									"value": "65465465465454",
+									"type": "text",
+									"description": "(string) supplier telephon"
+								},
+								{
+									"key": "email",
+									"value": "test@test.com",
+									"type": "text",
+									"description": "(string) supplier email"
+								},
+								{
+									"key": "zip_code",
+									"value": "0000",
+									"type": "text",
+									"description": "(string) zipcode"
+								},
+								{
+									"key": "city",
+									"value": "Cairo",
+									"type": "text",
+									"description": "(string) supplier city"
+								},
+								{
+									"key": "address",
+									"value": "test test, test",
+									"type": "text",
+									"description": "(string) supplier address"
+								},
+								{
+									"key": "is_special",
+									"value": "0",
+									"type": "text",
+									"description": "(bool) is this supplier special?"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"description": "<b>Authentication</b> is done through generated jwt token when logging in.\n",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"url": "http://localhost/CM_APP/public/api/v1/user/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "login",
+									"value": "admin",
+									"description": "(string) username",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "admin",
+									"description": "(string) user password",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sales",
+			"description": "",
+			"item": [
+				{
+					"name": "Top sales",
+					"request": {
+						"url": "http://localhost/CM_APP/public/api/v1/sale/top/2",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTEwOTMzNDIsImlhdCI6MTU5MDkyMDU0MiwibmJmIjoic3RydG90aW1lKFwibm93XCIpIiwiaXNzIjoiaHR0cDpcL1wvbG9jYWxob3N0IiwiYXVkIjoiaHR0cDpcL1wvbG9jYWxob3N0Iiwia2V5IjoiU2pDUHhXSVlzemJkdEpjZE1FNVlMcDhmNkNJM1JteFZXdmphWHU5YTBnS2F5N3N5Q2w0WEtoVVk2aDBiSDBmIiwiZGF0YSI6IjEifQ.nG3ZbovWDdqpnMP47EvUR51XudL32jzIwdclFZU-fvg",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Return the top n sell in the inventory.\n<p>\nyou can specify <b>n</b> by passing it in the url as the third fragment.\n</p>"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

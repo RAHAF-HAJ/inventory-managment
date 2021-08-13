@@ -1,0 +1,7 @@
+
+ @media screen and (max-width: 767px) {
+	.content-wrapper, .main-footer{
+		margin-left: 0;
+	}
+
+ }

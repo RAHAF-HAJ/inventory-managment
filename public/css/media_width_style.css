@@ -1,0 +1,40 @@
+div{
+	padding:10px;
+	background-color: yellow;
+	border:1px solid black;
+}
+
+/* Extra Small */
+@media(max-width:767px){
+	.extra_small{
+			background:red;
+	}
+
+}
+/* Small */
+@media(min-width:768px) and (max-width:991px){
+
+.small{
+		background:red;
+}
+
+}
+
+/* Medium */
+@media(min-width:992px) and (max-width:1199px){
+.medium{
+		background:red;
+}
+
+
+}
+
+/* Large */
+@media(min-width:1200px){
+.large{
+		background:red;
+}
+
+
+}
+

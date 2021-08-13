@@ -1,0 +1,76 @@
+
+*{
+    font-family: aealarabiya;
+}
+
+table {
+    width: 100%;
+
+}
+table td{
+    text-align: right;
+}
+table th{
+    text-align: center;
+}
+
+table.pdf-table {
+    border: 1px solid #000;
+}
+
+table.pdf-table {
+    border: 1px solid;
+}
+
+table.pdf-table td {
+    border-top: 1px solid;
+    padding: 2mm;
+}
+table.pdf-table th {
+    border-bottom: 1px solid;
+    padding: 3mm;
+    background-color: #cccccc;
+}
+
+table .ref {
+   width: 10%;
+}
+
+table .desig {
+   width: 35%;
+}
+table .unit {
+   width: 5%;
+}
+
+table .category {
+   width: 25%;
+}
+table .tva {
+   width: 5%;
+}
+
+table .supplier {
+   width: 20%;
+}
+
+
+.table-article-infos {
+    border: none;
+}
+.table-article-infos td{
+    border: none;
+    padding: 3mm;
+}
+.table-article-infos .td-label{
+    width: 30%;
+}
+.table-article-infos .info{
+    width: 70%;
+}
+.table-article-infos{
+    width: 100%;
+}
+.table-article-infos td {
+    width: 50%;
+}

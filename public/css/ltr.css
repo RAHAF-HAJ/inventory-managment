@@ -1,0 +1,26 @@
+body{
+	direction: ltr;
+}
+ .main-header .logo {
+	float: left;
+ }
+ 
+ .main-header ul.navig{
+	float: right;
+ }
+  .main-sidebar{
+	left:0;
+ }
+ 
+ .content-wrapper, .main-footer{
+	margin-left: 230px;
+	margin-right: auto !important;
+ }
+ 
+ .has-mini-sidebar .content-wrapper,
+ .has-mini-sidebar .main-footer {
+	margin-left: 50px;
+	margin-right: auto !important;
+
+ }
+ 
