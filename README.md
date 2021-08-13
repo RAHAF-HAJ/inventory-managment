@@ -28,11 +28,6 @@ To achieve the security there will be
 - url will be defined in htaccess
 - one entry point that determine next action depending on the valid url
 - using htmlentities and prepare function to deal with users insertions and updating.
-**Notes:**
 
-## due to ​commitments with my company:
-
-- I have achieved the sales/purchase section only.
-- In rest api I achieved only 4 web method with jwt auth.
 
 
